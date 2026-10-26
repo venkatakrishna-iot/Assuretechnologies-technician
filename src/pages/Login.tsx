@@ -215,7 +215,7 @@ export default function Login() {
             </p>
             <form onSubmit={handleSetNewPassword}>
               <div className="input-group">
-                <label className="input-label">Email Account</label>
+                <label className="input-label">{/^\d+$/.test(identifier) ? 'Mobile Number' : 'Email Address'}</label>
                 <input
                   type="text"
                   className="input-field"
